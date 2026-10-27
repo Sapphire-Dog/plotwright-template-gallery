@@ -12,6 +12,21 @@ opens, with the set attached. Once it's looked over, it's added here.
 
 ## Adding a set (for maintainers)
 
+The quick way: save the email from Mail (drag it to the Finder, which makes a `.eml` file),
+then from this repository run
+
+```sh
+scripts/add-set.py "path/to/the email.eml" --push
+```
+
+It checks the set opens, copies it into `sets/`, adds or updates its entry in `index.json`
+with the name, author and description from the email, and commits and pushes. Leave out
+`--push` to look over the change first (`git diff`); `--author` and `--description` change
+what the email says, and a `.wttemplates` file works in place of the email. Run it with
+`--help` for the rest.
+
+By hand, the steps are:
+
 1. Save the `.wttemplates` file from the email into `sets/`, named in lowercase with hyphens,
    such as `sets/fantasy-world.wttemplates`. Open it in Writers Toolbox first (Templates ›
    Import Templates…) to check it reads and looks right.
