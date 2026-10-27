@@ -1,0 +1,398 @@
+{
+  "calendars" : [
+
+  ],
+  "formatVersion" : 1,
+  "linkedTemplates" : {
+    "C0000000-0000-4000-8000-000000000001" : "Character",
+    "C0000000-0000-4000-8000-000000000002" : "Location"
+  },
+  "lookups" : [
+
+  ],
+  "partial" : [
+
+  ],
+  "relationshipTypes" : [
+    {
+      "fields" : [
+
+      ],
+      "forward" : "commands",
+      "id" : "65CF0D07-6E56-4535-80B0-B1C44E4F070F",
+      "name" : "Commands",
+      "reverse" : "serves under"
+    },
+    {
+      "fields" : [
+
+      ],
+      "forward" : "crewmate of",
+      "id" : "418F06D9-6BFA-4A42-B005-A7332EBD2202",
+      "name" : "Crewmate",
+      "reverse" : "crewmate of"
+    }
+  ],
+  "set" : {
+    "id" : "5E700004-0000-4000-8000-000000000000",
+    "name" : "Sci-fi Crew",
+    "versions" : {
+      "5E700004-0000-4000-8000-000000000001" : 1,
+      "5E700004-0000-4000-8000-000000000002" : 1,
+      "5E700004-0000-4000-8000-000000000003" : 1,
+      "5E700004-0000-4000-8000-000000000004" : 1
+    }
+  },
+  "source" : "Writers Toolbox",
+  "templates" : [
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Fighter"
+            },
+            {
+              "name" : "Freighter"
+            },
+            {
+              "name" : "Cruiser"
+            },
+            {
+              "name" : "Explorer"
+            },
+            {
+              "name" : "Station"
+            },
+            {
+              "name" : "Shuttle"
+            },
+            {
+              "name" : "Warship"
+            },
+            {
+              "name" : "Liner"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "5744BE6F-D7B0-4A25-A69F-F7A5C9EB9A77",
+          "kind" : "choice",
+          "name" : "Class"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "basic",
+          "id" : "887B494B-0C94-45C2-B636-0983AABED908",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Captain"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : true,
+          "detail" : "basic",
+          "id" : "2D216F13-B479-4DAA-9C83-1699D762C8C0",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Crew"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "basic",
+          "help" : "Where it is.",
+          "id" : "BE441D3A-3A45-465A-A721-F2612E493CEB",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000002",
+          "name" : "Location"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "standard",
+          "id" : "E564FA2E-A655-43EF-AF2D-03B27DF18B30",
+          "kind" : "link",
+          "linkTemplate" : "5E700004-0000-4000-8000-000000000003",
+          "name" : "Belongs To"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "choices" : [
+            {
+              "name" : "Pristine"
+            },
+            {
+              "name" : "Worn"
+            },
+            {
+              "name" : "Damaged"
+            },
+            {
+              "name" : "Crippled"
+            },
+            {
+              "name" : "Destroyed"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "44E16EC0-DE46-4979-9D27-482F77D60114",
+          "kind" : "choice",
+          "name" : "Condition"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "0C06F93E-EEF6-40F1-B031-1AA9793DE584",
+          "kind" : "longText",
+          "name" : "Description"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "detailed",
+          "id" : "2E54B315-4773-41DA-BCFA-3DFF85387EFF",
+          "kind" : "number",
+          "name" : "Crew Size"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "detailed",
+          "id" : "3C154167-4584-4F17-AE8E-E1FA7250D65C",
+          "kind" : "text",
+          "name" : "Top Speed"
+        }
+      ],
+      "id" : "5E700004-0000-4000-8000-000000000001",
+      "name" : "Ship"
+    },
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Terran"
+            },
+            {
+              "name" : "Desert"
+            },
+            {
+              "name" : "Ocean"
+            },
+            {
+              "name" : "Ice"
+            },
+            {
+              "name" : "Gas Giant"
+            },
+            {
+              "name" : "Jungle"
+            },
+            {
+              "name" : "Volcanic"
+            },
+            {
+              "name" : "Barren"
+            },
+            {
+              "name" : "Moon"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "3AB50D7E-B2AB-4C74-A9A1-C8E41B2BD202",
+          "kind" : "choice",
+          "name" : "Type"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "2635C522-A24C-47E8-A36E-F69CD2A6432C",
+          "kind" : "longText",
+          "name" : "Description"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Breathable"
+            },
+            {
+              "name" : "Thin"
+            },
+            {
+              "name" : "Toxic"
+            },
+            {
+              "name" : "None"
+            }
+          ],
+          "detail" : "standard",
+          "id" : "347BEA2B-934A-4AED-A981-B0140D318297",
+          "kind" : "choice",
+          "name" : "Atmosphere"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "help" : "Such as 0.8 g.",
+          "id" : "D3BD86D4-DFE7-4C79-8003-C111F5DACFC1",
+          "kind" : "text",
+          "name" : "Gravity"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "detailed",
+          "id" : "B8353C8B-584D-4111-A068-18607FDD2DA5",
+          "kind" : "number",
+          "name" : "Population"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "standard",
+          "id" : "5DD5FD19-6AC2-469B-9B0F-2BC2E67758AF",
+          "kind" : "link",
+          "linkTemplate" : "5E700004-0000-4000-8000-000000000003",
+          "name" : "Controlled By"
+        }
+      ],
+      "id" : "5E700004-0000-4000-8000-000000000002",
+      "name" : "Planet"
+    },
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Government"
+            },
+            {
+              "name" : "Corporation"
+            },
+            {
+              "name" : "Military"
+            },
+            {
+              "name" : "Rebels"
+            },
+            {
+              "name" : "Pirates"
+            },
+            {
+              "name" : "Religion"
+            },
+            {
+              "name" : "Alien Species"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "725C8B87-5A54-420C-8C9C-C63F90DF5CD6",
+          "kind" : "choice",
+          "name" : "Type"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "basic",
+          "id" : "D1082A28-9670-4358-AF6E-DF8A7153A408",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Leader"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "6FC73D18-B98D-4886-90F3-6FE3F3D25A8C",
+          "kind" : "longText",
+          "name" : "Goal"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "FAF9CE2B-6C61-4ECC-B5EC-4FC4FD477154",
+          "kind" : "longText",
+          "name" : "Description"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : true,
+          "detail" : "standard",
+          "id" : "9302794A-9AC3-43E8-9876-5BA7585779ED",
+          "kind" : "link",
+          "linkTemplate" : "5E700004-0000-4000-8000-000000000003",
+          "name" : "Allies"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : true,
+          "detail" : "standard",
+          "id" : "EA12E6A4-D58D-4469-9D93-1815871833B6",
+          "kind" : "link",
+          "linkTemplate" : "5E700004-0000-4000-8000-000000000003",
+          "name" : "Enemies"
+        }
+      ],
+      "id" : "5E700004-0000-4000-8000-000000000003",
+      "name" : "Faction"
+    },
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "A9E7B03C-D58A-429D-98DB-290B1E9F9210",
+          "kind" : "longText",
+          "name" : "What It Does"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "help" : "As much as the story needs, and no more.",
+          "id" : "217615B1-CC0F-4745-BD31-D2768272FBBD",
+          "kind" : "longText",
+          "name" : "How It Works"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "What it can't do. Limits make good plots.",
+          "id" : "35950C2E-6AE3-4651-BF69-DEAD71ABECFD",
+          "kind" : "longText",
+          "name" : "Limits"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "id" : "26669062-0B31-4D61-B187-C61154638685",
+          "kind" : "link",
+          "linkTemplate" : "5E700004-0000-4000-8000-000000000003",
+          "name" : "Who Has It"
+        }
+      ],
+      "id" : "5E700004-0000-4000-8000-000000000004",
+      "name" : "Technology"
+    }
+  ],
+  "units" : [
+
+  ]
+}

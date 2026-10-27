@@ -1,0 +1,301 @@
+{
+  "calendars" : [
+
+  ],
+  "formatVersion" : 1,
+  "linkedTemplates" : {
+    "C0000000-0000-4000-8000-000000000001" : "Character",
+    "C0000000-0000-4000-8000-000000000002" : "Location"
+  },
+  "lookups" : [
+
+  ],
+  "partial" : [
+
+  ],
+  "relationshipTypes" : [
+    {
+      "fields" : [
+
+      ],
+      "forward" : "suspects",
+      "id" : "29FD1295-F0E0-4D95-88E9-CD9DAB734408",
+      "name" : "Suspects",
+      "reverse" : "suspected by"
+    },
+    {
+      "fields" : [
+
+      ],
+      "forward" : "alibi for",
+      "id" : "698346F3-880C-4001-A1AC-4A7D0338AF14",
+      "name" : "Alibi",
+      "reverse" : "has alibi from"
+    },
+    {
+      "fields" : [
+
+      ],
+      "forward" : "informant to",
+      "id" : "6CFDBAC3-A317-44F1-9CA4-16262CD1AD85",
+      "name" : "Informant",
+      "reverse" : "has informant"
+    }
+  ],
+  "set" : {
+    "id" : "5E700002-0000-4000-8000-000000000000",
+    "name" : "Mystery",
+    "versions" : {
+      "5E700002-0000-4000-8000-000000000001" : 1,
+      "5E700002-0000-4000-8000-000000000002" : 1,
+      "5E700002-0000-4000-8000-000000000003" : 1
+    }
+  },
+  "source" : "Writers Toolbox",
+  "templates" : [
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Murder"
+            },
+            {
+              "name" : "Theft"
+            },
+            {
+              "name" : "Disappearance"
+            },
+            {
+              "name" : "Fraud"
+            },
+            {
+              "name" : "Blackmail"
+            },
+            {
+              "name" : "Arson"
+            },
+            {
+              "name" : "Kidnapping"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "1239618A-6AE4-42C7-A05B-92B9DE33B05E",
+          "kind" : "choice",
+          "name" : "Type"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "6E7E5E90-3A0B-4B99-9BD9-FA9C69AFFBE8",
+          "kind" : "date",
+          "name" : "When"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "F1842B94-79BC-41D0-8393-36698D136BBB",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000002",
+          "name" : "Where"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "98B1E728-A8D1-41F0-94E8-77649331784A",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Victim"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "The truth, which the reader learns last.",
+          "id" : "A21E4974-115A-429B-95FC-87E902D27A25",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Culprit"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "The real sequence of events.",
+          "id" : "9AB9E09D-F2BB-428C-8846-806D32FA8DDB",
+          "kind" : "longText",
+          "name" : "What Happened"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "help" : "How it first appears, to the detective and the reader.",
+          "id" : "67F5FEE0-1225-4CE1-8420-69A174690150",
+          "kind" : "longText",
+          "name" : "What It Looks Like"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "basic",
+          "id" : "BDA93D81-A22F-4A87-9BFE-43C679F3831A",
+          "kind" : "bool",
+          "name" : "Solved"
+        }
+      ],
+      "id" : "5E700002-0000-4000-8000-000000000001",
+      "name" : "Crime"
+    },
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "6A18A796-826F-4B19-A4B1-469249EA5A4F",
+          "kind" : "longText",
+          "name" : "Description"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "AAF0E23D-2EAF-4E1D-8AEC-461BF2D30D78",
+          "kind" : "link",
+          "linkTemplate" : "5E700002-0000-4000-8000-000000000001",
+          "name" : "Crime"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "3E43B28E-12FA-4FFD-BC60-2F2B854BDAFF",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000002",
+          "name" : "Found Where"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "37D337F9-50CD-4969-9B6D-60FD36C26C5F",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Found By"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "Who it seems to point to.",
+          "id" : "027D5081-BD38-4FBB-AE26-4B5311D4E5A0",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Points To"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "It points the wrong way.",
+          "id" : "A30C1BBA-557E-4D6A-94FB-824A42AC37B0",
+          "kind" : "bool",
+          "name" : "Red Herring"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "id" : "5418D222-9E21-409A-BB60-5847C3021C56",
+          "kind" : "longText",
+          "name" : "What It Really Means"
+        }
+      ],
+      "id" : "5E700002-0000-4000-8000-000000000002",
+      "name" : "Clue"
+    },
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "The character, with their own page.",
+          "id" : "FCFF876A-F0FE-498C-AC6C-9FE63CCF4E63",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Who"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "B8B8501A-5D06-4B3A-AE46-10CD31C8ADAE",
+          "kind" : "link",
+          "linkTemplate" : "5E700002-0000-4000-8000-000000000001",
+          "name" : "Crime"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "684F6B86-909F-49FA-92BC-0B5F8B16B152",
+          "kind" : "longText",
+          "name" : "Motive"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "ECAAB9D7-F20C-42B8-8916-4BA6786AE375",
+          "kind" : "longText",
+          "name" : "Means"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "5A86A46D-57E0-43AA-BE8D-6607F075204F",
+          "kind" : "longText",
+          "name" : "Opportunity"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "basic",
+          "id" : "863044D7-DAC2-4A4A-B117-BA3FF817FC69",
+          "kind" : "longText",
+          "name" : "Alibi"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "basic",
+          "id" : "AE539071-B1F7-4998-ABC5-6C81861282B6",
+          "kind" : "bool",
+          "name" : "Cleared"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "help" : "What they're hiding, guilty or not.",
+          "id" : "0828EB80-D45A-47C4-9BF5-2AF5ED04E00E",
+          "kind" : "longText",
+          "name" : "Secret"
+        }
+      ],
+      "id" : "5E700002-0000-4000-8000-000000000003",
+      "name" : "Suspect"
+    }
+  ],
+  "units" : [
+
+  ]
+}

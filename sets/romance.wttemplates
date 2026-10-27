@@ -1,0 +1,279 @@
+{
+  "calendars" : [
+
+  ],
+  "formatVersion" : 1,
+  "linkedTemplates" : {
+    "C0000000-0000-4000-8000-000000000001" : "Character",
+    "C0000000-0000-4000-8000-000000000002" : "Location"
+  },
+  "lookups" : [
+
+  ],
+  "partial" : [
+
+  ],
+  "relationshipTypes" : [
+    {
+      "fields" : [
+
+      ],
+      "forward" : "in love with",
+      "id" : "6B192E9C-31C6-46C3-ACA8-6ED63DB6AAB0",
+      "name" : "Love Interest",
+      "reverse" : "loved by"
+    },
+    {
+      "fields" : [
+
+      ],
+      "forward" : "former partner of",
+      "id" : "7632307A-5377-45F2-B2CC-A319BCE8CDE4",
+      "name" : "Former Partner",
+      "reverse" : "former partner of"
+    },
+    {
+      "fields" : [
+
+      ],
+      "forward" : "rival in love of",
+      "id" : "E292BAA2-9ED7-4534-AB43-6F31B06ECC9C",
+      "name" : "Rival in Love",
+      "reverse" : "rival in love of"
+    },
+    {
+      "fields" : [
+
+      ],
+      "forward" : "matchmaker for",
+      "id" : "61E6BB57-BA52-414D-8384-0093E3BDB27A",
+      "name" : "Matchmaker",
+      "reverse" : "matched by"
+    }
+  ],
+  "set" : {
+    "id" : "5E700003-0000-4000-8000-000000000000",
+    "name" : "Romance",
+    "versions" : {
+      "5E700003-0000-4000-8000-000000000001" : 1,
+      "5E700003-0000-4000-8000-000000000002" : 1
+    }
+  },
+  "source" : "Writers Toolbox",
+  "templates" : [
+    {
+      "fields" : [
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "74411F08-9056-46A5-8805-F89FA074BE68",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Partners"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Enemies to Lovers"
+            },
+            {
+              "name" : "Friends to Lovers"
+            },
+            {
+              "name" : "Second Chance"
+            },
+            {
+              "name" : "Fake Relationship"
+            },
+            {
+              "name" : "Forbidden Love"
+            },
+            {
+              "name" : "Forced Proximity"
+            },
+            {
+              "name" : "Slow Burn"
+            },
+            {
+              "name" : "Love Triangle"
+            },
+            {
+              "name" : "Grumpy and Sunshine"
+            },
+            {
+              "name" : "Marriage of Convenience"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "26A3D148-643F-4591-ACC8-9E3D8363FCFC",
+          "kind" : "choice",
+          "name" : "Trope"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "F9435379-D8D9-4C62-AB8E-8DBAAF4325B3",
+          "kind" : "longText",
+          "name" : "How They Meet"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "Inside each of them, and outside.",
+          "id" : "E51410DD-314B-4D3D-893E-6D33ABB2BC47",
+          "kind" : "longText",
+          "name" : "What Keeps Them Apart"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "choices" : [
+            {
+              "name" : "Strangers"
+            },
+            {
+              "name" : "Attraction"
+            },
+            {
+              "name" : "Growing Closer"
+            },
+            {
+              "name" : "Together"
+            },
+            {
+              "name" : "Crisis"
+            },
+            {
+              "name" : "Apart"
+            },
+            {
+              "name" : "Reunited"
+            },
+            {
+              "name" : "Ever After"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "B01CDF17-A844-4588-AF83-4ED51A685919",
+          "kind" : "choice",
+          "name" : "Stage"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "help" : "Which chapter, and how.",
+          "id" : "5CAEAB83-8718-43E1-820B-D84FA4C6B94B",
+          "kind" : "text",
+          "name" : "First Kiss"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Happily Ever After"
+            },
+            {
+              "name" : "Happy for Now"
+            },
+            {
+              "name" : "Apart"
+            },
+            {
+              "name" : "Open"
+            }
+          ],
+          "detail" : "standard",
+          "id" : "E10D363E-D029-4E1C-9E40-404E7A765556",
+          "kind" : "choice",
+          "name" : "Ending"
+        }
+      ],
+      "id" : "5E700003-0000-4000-8000-000000000001",
+      "name" : "Couple"
+    },
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "BDA8071F-D832-4EEE-A8C5-749CC1A188EC",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Who"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "What the other sees in them.",
+          "id" : "2F87B9C1-4FFD-4F0F-9BAE-DCC879E839E3",
+          "kind" : "longText",
+          "name" : "What Draws Them"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "The old hurt that makes love hard.",
+          "id" : "3D9737CA-2868-4D18-AD37-AF225EE79730",
+          "kind" : "longText",
+          "name" : "Wound"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "2432C8CC-2346-4878-87F2-E7861932282B",
+          "kind" : "longText",
+          "name" : "What They Want"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "id" : "9406205D-7CE2-4B9B-B056-B92CC22984B2",
+          "kind" : "longText",
+          "name" : "What They Need"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Words"
+            },
+            {
+              "name" : "Time"
+            },
+            {
+              "name" : "Gifts"
+            },
+            {
+              "name" : "Acts of Service"
+            },
+            {
+              "name" : "Touch"
+            }
+          ],
+          "detail" : "detailed",
+          "id" : "27EBF5CB-A69D-4E12-9773-D98C006D5A79",
+          "kind" : "choice",
+          "name" : "Love Language"
+        }
+      ],
+      "id" : "5E700003-0000-4000-8000-000000000002",
+      "name" : "Love Interest"
+    }
+  ],
+  "units" : [
+
+  ]
+}

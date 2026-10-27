@@ -1,0 +1,365 @@
+{
+  "calendars" : [
+
+  ],
+  "formatVersion" : 1,
+  "linkedTemplates" : {
+    "C0000000-0000-4000-8000-000000000001" : "Character",
+    "C0000000-0000-4000-8000-000000000002" : "Location"
+  },
+  "lookups" : [
+
+  ],
+  "partial" : [
+
+  ],
+  "relationshipTypes" : [
+
+  ],
+  "set" : {
+    "id" : "5E700001-0000-4000-8000-000000000000",
+    "name" : "Fantasy World",
+    "versions" : {
+      "5E700001-0000-4000-8000-000000000001" : 1,
+      "5E700001-0000-4000-8000-000000000002" : 1,
+      "5E700001-0000-4000-8000-000000000003" : 1,
+      "5E700001-0000-4000-8000-000000000004" : 1
+    }
+  },
+  "source" : "Writers Toolbox",
+  "templates" : [
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "basic",
+          "help" : "Who rules it now.",
+          "id" : "C9508885-BF2F-4136-BF83-69684D59F95A",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Ruler"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "Its capital or seat of power.",
+          "id" : "A939B605-E07F-4293-8C7B-DD765835579F",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000002",
+          "name" : "Seat"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Monarchy"
+            },
+            {
+              "name" : "Empire"
+            },
+            {
+              "name" : "Council"
+            },
+            {
+              "name" : "Theocracy"
+            },
+            {
+              "name" : "Republic"
+            },
+            {
+              "name" : "Clans"
+            },
+            {
+              "name" : "Occupied"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "4879315C-B443-4912-B936-5429DDDDA91D",
+          "kind" : "choice",
+          "name" : "Government"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "22A433C1-CC81-4F76-B142-0A6EB99E02FF",
+          "kind" : "longText",
+          "name" : "Description"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : true,
+          "detail" : "standard",
+          "id" : "FDD75A92-7E21-4D73-BD9B-3769AE6F5BBE",
+          "kind" : "link",
+          "linkTemplate" : "5E700001-0000-4000-8000-000000000001",
+          "name" : "Allies"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : true,
+          "detail" : "standard",
+          "id" : "0DCB66CB-5DF8-4D32-8B35-997FC751FEE4",
+          "kind" : "link",
+          "linkTemplate" : "5E700001-0000-4000-8000-000000000001",
+          "name" : "Enemies"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "detailed",
+          "id" : "88A3C010-5196-4822-8A1E-9A994910B439",
+          "kind" : "longText",
+          "name" : "History"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "detailed",
+          "help" : "Festivals, laws and manners an outsider would notice.",
+          "id" : "74AB8381-C71B-4497-962A-82762DAFDA5A",
+          "kind" : "longText",
+          "name" : "Customs"
+        }
+      ],
+      "id" : "5E700001-0000-4000-8000-000000000001",
+      "name" : "Kingdom"
+    },
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "Where the power comes from, such as the gods, the blood or the stars.",
+          "id" : "AFF899F6-84C0-4773-9FDF-CF1D7196ECA3",
+          "kind" : "text",
+          "name" : "Source"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "3A003F4F-F8DC-474F-8886-2CC984F64EA6",
+          "kind" : "longText",
+          "name" : "Who Can Use It"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "What using it takes from the user. A cost keeps magic from solving everything.",
+          "id" : "B4C4EDEB-9BBE-4AE8-B3A4-629E5A3D8F64",
+          "kind" : "longText",
+          "name" : "Cost"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "What it can't do, however strong the user.",
+          "id" : "DFE46845-1238-4027-86A0-4805F839EEFA",
+          "kind" : "longText",
+          "name" : "Limits"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "help" : "What others see, hear or feel when it's used.",
+          "id" : "6B99804D-2D90-422C-87C9-F724BB5503FC",
+          "kind" : "longText",
+          "name" : "How It Looks"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "detailed",
+          "id" : "5B7F53DF-AED8-4AE2-ACEC-D207132EE85D",
+          "kind" : "longText",
+          "name" : "How It's Learned"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "id" : "294D7888-480F-4C40-9F1D-383E9DB95834",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Known Practitioners"
+        }
+      ],
+      "id" : "5E700001-0000-4000-8000-000000000002",
+      "name" : "Magic System"
+    },
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Beast"
+            },
+            {
+              "name" : "Monster"
+            },
+            {
+              "name" : "Spirit"
+            },
+            {
+              "name" : "Dragon"
+            },
+            {
+              "name" : "Fae"
+            },
+            {
+              "name" : "Undead"
+            },
+            {
+              "name" : "Construct"
+            },
+            {
+              "name" : "Mount"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "9D265508-F382-4D73-A58C-45B6D47BFFF3",
+          "kind" : "choice",
+          "name" : "Type"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "32EAA072-F005-4D21-8F63-42C9C91DF1B9",
+          "kind" : "longText",
+          "name" : "Description"
+        },
+        {
+          "allowMultiple" : true,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "help" : "Where it lives.",
+          "id" : "2B3F76A1-7A1D-46D1-B289-FABC4AEC4DD8",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000002",
+          "name" : "Habitat"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "choices" : [
+            {
+              "name" : "Harmless"
+            },
+            {
+              "name" : "Wary"
+            },
+            {
+              "name" : "Dangerous"
+            },
+            {
+              "name" : "Deadly"
+            }
+          ],
+          "detail" : "basic",
+          "id" : "9375B9E6-B0E3-498A-8730-06B3B942626B",
+          "kind" : "choice",
+          "name" : "Danger"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "id" : "65569579-877A-42B3-AC01-C45DABADF033",
+          "kind" : "bool",
+          "name" : "Intelligent"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "id" : "DEA06C3C-4791-4F57-A3B7-6FDB9AD9673D",
+          "kind" : "longText",
+          "name" : "Weaknesses"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "detailed",
+          "help" : "What people believe about it, true or not.",
+          "id" : "03CEBB0F-4D3A-44C9-86A4-9FB891A9567F",
+          "kind" : "longText",
+          "name" : "Lore"
+        }
+      ],
+      "id" : "5E700001-0000-4000-8000-000000000003",
+      "name" : "Creature"
+    },
+    {
+      "fields" : [
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "FDAEBA18-0A41-4F83-B396-81A23DD20CB6",
+          "kind" : "longText",
+          "name" : "Description"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "basic",
+          "id" : "CA750892-D308-4A54-9D29-65427223A98B",
+          "kind" : "longText",
+          "name" : "Powers"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "basic",
+          "help" : "Who has it.",
+          "id" : "BC30DD35-2116-42E6-8590-B6765B6E0F86",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000001",
+          "name" : "Holder"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : true,
+          "detail" : "standard",
+          "id" : "7785E08F-89FC-4A48-82A3-DCD620C8ACB5",
+          "kind" : "link",
+          "linkTemplate" : "C0000000-0000-4000-8000-000000000002",
+          "name" : "Whereabouts"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "detailed",
+          "id" : "BDFF1EB3-5C4C-4620-8BF8-40A29718847B",
+          "kind" : "text",
+          "name" : "Made By"
+        },
+        {
+          "allowMultiple" : false,
+          "changesOverTime" : false,
+          "detail" : "standard",
+          "help" : "What it does to whoever uses it.",
+          "id" : "F87D3585-AE68-481E-A795-4C1AF2C74144",
+          "kind" : "longText",
+          "name" : "Price"
+        }
+      ],
+      "id" : "5E700001-0000-4000-8000-000000000004",
+      "name" : "Artifact"
+    }
+  ],
+  "units" : [
+
+  ]
+}

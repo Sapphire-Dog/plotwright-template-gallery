@@ -1,4 +1,58 @@
 {
   "formatVersion": 1,
-  "sets": []
+  "sets": [
+    {
+      "id": "fantasy-world",
+      "name": "Fantasy World",
+      "author": "Sapphire Dog",
+      "description": "Kingdoms, magic systems, creatures and artifacts for an invented world, linked to your characters and places.",
+      "file": "sets/fantasy-world.wttemplates",
+      "templates": [
+        "Kingdom",
+        "Magic System",
+        "Creature",
+        "Artifact"
+      ],
+      "updated": "2026-10-27"
+    },
+    {
+      "id": "mystery",
+      "name": "Mystery",
+      "author": "Sapphire Dog",
+      "description": "Crimes, clues and suspects: who did it, what each clue really means, and who's cleared. Adds Suspects, Alibi and Informant relationships.",
+      "file": "sets/mystery.wttemplates",
+      "templates": [
+        "Crime",
+        "Clue",
+        "Suspect"
+      ],
+      "updated": "2026-10-27"
+    },
+    {
+      "id": "romance",
+      "name": "Romance",
+      "author": "Sapphire Dog",
+      "description": "Couples and love interests: tropes, how they meet, what keeps them apart and where they stand. Adds Love Interest, Former Partner, Rival in Love and Matchmaker relationships.",
+      "file": "sets/romance.wttemplates",
+      "templates": [
+        "Couple",
+        "Love Interest"
+      ],
+      "updated": "2026-10-27"
+    },
+    {
+      "id": "sci-fi-crew",
+      "name": "Sci-fi Crew",
+      "author": "Sapphire Dog",
+      "description": "Ships, planets, factions and technology, with crews, captains and who controls what. Adds Commands and Crewmate relationships.",
+      "file": "sets/sci-fi-crew.wttemplates",
+      "templates": [
+        "Ship",
+        "Planet",
+        "Faction",
+        "Technology"
+      ],
+      "updated": "2026-10-27"
+    }
+  ]
 }
